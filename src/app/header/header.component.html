@@ -1,0 +1,12 @@
+
+<nav class="header">
+  <!-- *ngIf="keycloak.isLoggedIn()" -->
+  <span class="username" >
+   Hello {{ keycloak.getUsername() }}, Welcome to Kalgudi Outputs
+  </span>
+  <button (click)="goToHome('/')">Home</button>
+  <button (click)="goTo('/create-rfq')" *ngIf="showCreateRFQ()">Create RFQ</button>
+  <button (click)="goTo('/create-pds')" *ngIf="showCreatePDS()">Create PDS</button>
+  <button *ngIf="!keycloak.isLoggedIn()" (click)="login()">LOGIN</button>
+  <button *ngIf="keycloak.isLoggedIn()" (click)="logout()">LOGOUT</button>
+</nav>

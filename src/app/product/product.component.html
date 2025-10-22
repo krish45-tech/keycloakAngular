@@ -1,0 +1,8 @@
+<h2>Product List</h2>
+<div class="product-grid">
+  <div class="product-card" *ngFor="let product of products">
+    <h4>{{ product.name }}</h4>
+    <img src="{{ product.img }}" alt="">
+    <p>{{ product.mrp }}</p>
+  </div>
+</div>

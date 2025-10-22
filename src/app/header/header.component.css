@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #5783ac;
+}
+.header span.username {
+  color: rgba(0, 0, 0, 0.795);
+  font-weight:600;
+  margin-top: 5px;
+  font-size: 20px;
+  margin-right: auto; /* Pushes the buttons to the right */
+}
+
+.header button {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color:rgba(37, 37, 37, 0.61);
+  color: white;
+  font-style: Bold;
+}
+
